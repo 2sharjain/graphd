@@ -1,0 +1,11 @@
+tulip-python
+matplotlib
+pyspark
+tensorflow #choose a version compatible with your system (cf. CUDA)
+spektral
+networkx
+joblib
+scikit-learn
+tqdm
+s_gd2
+jupyter
