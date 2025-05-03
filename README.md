@@ -13,10 +13,11 @@ This project was conducted using some ``dependencies" whose behavior might chang
 All Python dependencies are listed in [requirements.txt](requirements.txt).
 
 # Organisation
-* [data](data/) contains various graphs, including Rome Graphs taken from the [Graph Drawing](http://www.graphdrawing.org/data.html) website in format .tlpb.gz
 * [code](code/) python code of (DNN)²
 * [train.py](train.py) Example of main file to train a model using DNN2_Wrapper class.
 * [predict.ipynb](predict.ipynb) Notebook providing examples to generate DNN2 predictions, visualize them and compute aesthetic metrics.
+* [generate_data.py](generate_data.py) Generates the graphs used for training
+* [graph_mega.py](graph_mega.py) Generates the graphs used for training
 
 More precisely, [code](code/) contains:
 * [DNN2_Wrapper.py](code/DNN2_Wrapper.py) Contains a class that paritions the different stages of data preprocessing and model training. 
@@ -30,8 +31,6 @@ More precisely, [code](code/) contains:
 * [SOTA_layouts.py](code/SOTA_layouts.py) Interfaces to layout graphs with state of the art layout algorithms and trained (DNN)².
 * [custom_graphs.py](code/custom_graphs.py) Provides interface to easily generate some common graphs
 * [metrics.py](code/metrics.py) Metrics used to evaluate layouts. 
-* [generate_data.py](generate_data.py) Generates the graphs used for training
-* [graph_mega.py](graph_mega.py) Generates the graphs used for training
 
 
 
