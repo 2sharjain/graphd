@@ -1,7 +1,5 @@
-# Presentation
-This repository contains main code features of the paper __Deep Neural Network for DrawiNg Networks, (DNN)²__, appeared in the Proceedings of the 29th International Symposium on Graph Drawing and Network Visualization (GD 2021) and available at https://arxiv.org/abs/2108.03632.
-
-It contains research code that was not written to be extensively maintained. 
+This repository is a modified from:https://github.com/LoannGio/DNN2
+ 
 
 The repository does not provides the model and benchmarks from the paper. However, all the methods (DNN layers, data processing, metrics) code are shared for reproducibility.
 
@@ -32,6 +30,10 @@ More precisely, [code](code/) contains:
 * [SOTA_layouts.py](code/SOTA_layouts.py) Interfaces to layout graphs with state of the art layout algorithms and trained (DNN)².
 * [custom_graphs.py](code/custom_graphs.py) Provides interface to easily generate some common graphs
 * [metrics.py](code/metrics.py) Metrics used to evaluate layouts. 
+* [generate_data.py](generate_data.py) Generates the graphs used for training
+* [graph_mega.py](graph_mega.py) Generates the graphs used for training
+
+
 
 # Hyper parameters
 This version of the code enables some design choices.
@@ -43,22 +45,3 @@ This version of the code enables some design choices.
 **Nodes features** : *unique node id*, *random metric* and *2D layout* (supported by tulip-python API) are supported and several can be given as input to the model. More information are directly commented in [train.py](train.py).
 
 **Other hyper-parameters** : most other common hyper-parameters (e.g., batch size, optimizer) can be provided through the `DNN2_Wrapper` class, more specifically in its methods `__init__`, `prepare_data` and `train`.
-
-# Contacts
-Loann Giovannangeli: loann.giovannangeli@u-bordeaux.fr\
-Frederic Lalanne: frederic.lalanne@u-bordeaux.fr\
-David Auber: david.auber@u-bordeaux.fr\
-Romain Giot: romain.giot@u-bordeaux.fr\
-Romain Bourqui: romain.bourqui@u-bordeaux.fr
-
-# Cite
-```
-@inproceedings{giovannangeli2021dnn2,
-  title={{Deep Neural Network for DrawiNg Networks, (DNN)\textsuperscript{2}}},
-  author={{Giovannangeli, Loann and Lalanne, Frederic and Auber, David and Giot, Romain and Bourqui, Romain}},
-  booktitle={{International Symposium on Graph Drawing and Network Visualization}},
-  pages={375--390},
-  year={2021},
-  organization={Springer}
-}
-```
