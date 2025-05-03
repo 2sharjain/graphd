@@ -1,4 +1,4 @@
-This repository is a modified from:https://github.com/LoannGio/DNN2
+This repository is modified from:https://github.com/LoannGio/DNN2
  
 
 The repository does not provides the model and benchmarks from the paper. However, all the methods (DNN layers, data processing, metrics) code are shared for reproducibility.
