@@ -1,8 +1,6 @@
 This repository is modified from:https://github.com/LoannGio/DNN2
  
 
-The repository does not provides the model and benchmarks from the paper. However, all the methods (DNN layers, data processing, metrics) code are shared for reproducibility.
-
 # Requirements
 This project was conducted using some ``dependencies" whose behavior might change according to their version. Here follows the list of the versions that were used (and hopefully work) for these dependencies.
 * Python 3.8.5
