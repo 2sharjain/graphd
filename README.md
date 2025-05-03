@@ -17,14 +17,14 @@ All Python dependencies are listed in [requirements.txt](requirements.txt).
 * [train.py](train.py) Example of main file to train a model using DNN2_Wrapper class.
 * [predict.ipynb](predict.ipynb) Notebook providing examples to generate DNN2 predictions, visualize them and compute aesthetic metrics.
 * [generate_data.py](generate_data.py) Generates the graphs used for training
-* [graph_mega.py](graph_mega.py) Generates the graphs used for training
+* [graph_mega.py](graph_mega.py) Constructs the megagraph
 
 More precisely, [code](code/) contains:
 * [DNN2_Wrapper.py](code/DNN2_Wrapper.py) Contains a class that paritions the different stages of data preprocessing and model training. 
 * [graph_preprocessing.py](code/graph_preprocessing.py) All the operations we need to do on/with graphs.
 * [spark_preprocessing.py](code/spark_preprocessing.py) Scalable handling of data generation.
 * [sequences.py](code/sequences.py) Data structure used to feed the model during training.
-* [losses.py](code/losses.py) Custom loss functions. Contains ``stress`` and ``tsNET`` losses.
+* [losses.py](code/losses.py) Custom loss functions. Contains our custom-designed loss in the tsNET function.
 * [graph_layers.py](code/graph_layer.py) Our implementation of some Graph Neural Network layers
 * [models.py](code/models.py) Code to build the Neural network architecture.
 * [custom_callbacks.py](code/custom_callbacks.py) VisualSampleCallback, a custom callback that, at the end of each epoch, saves some graph layout examples of that epoch model. Used to keep visual tracking of the model layouts evolution throughut the training
